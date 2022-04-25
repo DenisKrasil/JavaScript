@@ -31,7 +31,53 @@
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  /**
+   * Считает сумму переданных аргументов.
+   * @param {number} a - Первое число.
+   * @param {number} b - Второе число.
+   * @returns {number} Сумма чисел.
+   */  
+  function sum(a, b) {
+    return a + b;
+  }
+
+  /**
+   * Считает частное переданных аргументов.
+   * @param {number} a - Первое число.
+   * @param {number} b - Второе число.
+   * @returns {number} Частное чисел.
+   */  
+  function div(a, b) {
+    return a / b;
+  }
+
+  /**
+   * Считает произведение переданных аргументов.
+   * @param {number} a - Первое число.
+   * @param {number} b - Второе число.
+   * @returns {number} Произведение чисел.
+   */  
+  function mult(a, b) {
+    return a * b;
+  }
+
+  /**
+   * Вычитает из большего переданного аргумента меньший.
+   * @param {number} a - Первое число.
+   * @param {number} b - Второе число.
+   * @returns {number} Разность чисел.
+   */  
+  function sub(a, b) {
+    if (a >= b) {
+      return a - b;
+    } 
+    return b - a;
+    }
+
+  console.log(sum(2, 6));
+  console.log(div(12, 6));
+  console.log(mult(6, 6));
+  console.log(sub(6, 6));
 </script>
 </body>
 </html>
