@@ -56,7 +56,8 @@
   1. Необходимо вывести сообщение в консоль "все теги прогрузились", когда все
   теги будут созданы браузером.
   */
-  document.addEventListener('DOMContentLoaded', () => console.log("все теги прогрузились"));
+  document.addEventListener('DOMContentLoaded', 
+  () => console.log("все теги прогрузились"));
 
 
   /*
@@ -75,11 +76,11 @@
   Необходимо использовать делегирование.
   */
   document.addEventListener('click', event => {
-    let isContained = "присутствует";
+    const isContained = "присутствует";
     if (!event.target.classList.contains('super_element')) {
       isContained = "отсутствует";
     }
-    console.log(`Класс "super_element" ${isContained} в элементе "${event.target.tagName.toLowerCase()}"`)
+    console.log(`Класс "super_element" ${isContained} в элементе "${event.target.tagName.toLowerCase()}"`);
   });
 
   /*
@@ -87,7 +88,7 @@
   "Вы навели на textarea."
    */
   document.querySelector('textarea')
-  .addEventListener('mouseover', () => console.log("Вы навели на textarea."));
+    .addEventListener('mouseover', () => console.log("Вы навели на textarea."));
 
   /*
   5. Необходимо повесить событие клика на тег ul. В обработчике события в
@@ -120,7 +121,7 @@
   7. С помощью JS необходимо изменить цвет заднего фона каждого второго тега li.
    */
   document.querySelectorAll('li:nth-child(2n)')
-  .forEach(el => el.style.backgroundColor = 'red');
+    .forEach(el => el.style.backgroundColor = 'red');
   
 </script>
 </body>
